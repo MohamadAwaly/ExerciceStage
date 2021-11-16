@@ -1,0 +1,21 @@
+<mat-card *ngIf="users">
+  <mat-card-title>Detail user</mat-card-title>
+  <mat-list>
+    <mat-list-item>{{ users.id }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ users.username }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ users.firstName }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ users.password }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ users.lastName }}</mat-list-item>
+  </mat-list>
+  <mat-card>
+    <mat-form-field appearance="fill">
+      <mat-label>Nom</mat-label>
+      <input [(ngModel)]="userName" matInput value="{{users.username}}">
+    </mat-form-field>
+  </mat-card>
+</mat-card>
+

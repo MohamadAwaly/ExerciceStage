@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>
+    Liste des utilisateurs
+  </mat-card-title>
+  <mat-card-content>
+    <mat-list role="list">
+      <mat-list-item (click)="userDetails(user)" *ngFor="let user of users" > {{user.firstName}} </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+
