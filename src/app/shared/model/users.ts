@@ -1,13 +1,14 @@
-import {Injectable} from "@angular/core";
-
-@Injectable({
-  providedIn: 'root'
-})
 export class Users {
-  id?: number;
-  username?: string;
-  password?: string;
-  firstName?: string;
-  lastName?: string;
+
+  // @ts-ignore
+  public id: number;
+  public username: string;
+  public password: string;
+  public firstName: string;
+  public lastName: string;
+
+  constructor() {
+  }
+
 }
 

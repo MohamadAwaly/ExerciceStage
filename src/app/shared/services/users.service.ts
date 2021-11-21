@@ -19,7 +19,7 @@ export class UsersService {
   },
     {
       id: 2,
-      username: 'Luc',
+      username: 'Lucas',
       firstName: 'Lucas',
       lastName: 'lu',
       password: '123456',
